@@ -66,3 +66,32 @@ if st.button("Scan IP"):
             st.error(f"Error: {e}")
     else:
         st.warning("Please enter an IP address.")
+import socket
+
+st.divider()
+st.subheader("🔍 Basic Port Scanner")
+
+target = st.text_input("Enter Target URL or IP (e.g., scanme.nmap.org):", placeholder="scanme.nmap.org")
+common_ports = [21, 22, 23, 25, 53, 80, 110, 443, 3306, 3389]
+
+if st.button("Start Port Scan"):
+    if target:
+        st.write(f"Scanning {target}...")
+        results = []
+        
+        # Simple loop to check ports
+        for port in common_ports:
+            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            s.settimeout(0.5)
+            result = s.connect_ex((target, port))
+            if result == 0:
+                results.append(f"✅ Port {port} is OPEN")
+            s.close()
+        
+        if results:
+            for res in results:
+                st.write(res)
+        else:
+            st.info("No common ports are open or target is filtered.")
+    else:
+        st.warning("Please enter a target to scan.")
