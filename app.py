@@ -1,25 +1,21 @@
 import streamlit as st
+
+# 1. Page Config
 st.set_page_config(
     page_title="Sentinel-X",
     page_icon="🛡️",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    layout="wide"
 )
 
+# 2. PWA Injection
 st.markdown(
     """
     <head>
         <link rel="manifest" href="https://satyam-sentinel-x.streamlit.app/manifest.json">
-        <meta name="theme-color" content="#00ff41">
         <script>
             if ('serviceWorker' in navigator) {
               window.addEventListener('load', function() {
-                navigator.serviceWorker.register('https://satyam-sentinel-x.streamlit.app/service-worker.js')
-                .then(function(registration) {
-                  console.log('Sentinel-X ServiceWorker registered!');
-                }, function(err) {
-                  console.log('ServiceWorker registration failed: ', err);
-                });
+                navigator.serviceWorker.register('https://satyam-sentinel-x.streamlit.app/service-worker.js');
               });
             }
         </script>
@@ -28,15 +24,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# 3. UI Content
 st.title("🛡️ Sentinel-X: Cyber Security Suite")
-st.success(f"Welcome back, {st.experimental_user.get('name', 'Satyam')}! App mode active.")
-
-with st.sidebar:
-    st.header("Security Tools")
-    st.button("Network Scanner")
-    st.button("Vulnerability Check")
-    st.info("Sentinel-X v1.0 - Powered by Python")
-  
+st.success("Welcome back, Satyam! App mode active.")
 import streamlit as st
 import socket
 import requests
