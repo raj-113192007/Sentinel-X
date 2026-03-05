@@ -1,23 +1,42 @@
-{
-  "name": "Sentinel-X Cybersecurity",
-  "short_name": "SentinelX",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#0e1117",
-  "theme_color": "#00ff41",
-  "icons": [
-    {
-      "src": "https://cdn-icons-png.flaticon.com/512/2092/2092663.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "https://cdn-icons-png.flaticon.com/512/2092/2092663.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
-}
+import streamlit as st
+st.set_page_config(
+    page_title="Sentinel-X",
+    page_icon="🛡️",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+st.markdown(
+    """
+    <head>
+        <link rel="manifest" href="https://satyam-sentinel-x.streamlit.app/manifest.json">
+        <meta name="theme-color" content="#00ff41">
+        <script>
+            if ('serviceWorker' in navigator) {
+              window.addEventListener('load', function() {
+                navigator.serviceWorker.register('https://satyam-sentinel-x.streamlit.app/service-worker.js')
+                .then(function(registration) {
+                  console.log('Sentinel-X ServiceWorker registered!');
+                }, function(err) {
+                  console.log('ServiceWorker registration failed: ', err);
+                });
+              });
+            }
+        </script>
+    </head>
+    """,
+    unsafe_allow_html=True
+)
+
+st.title("🛡️ Sentinel-X: Cyber Security Suite")
+st.success(f"Welcome back, {st.experimental_user.get('name', 'Satyam')}! App mode active.")
+
+with st.sidebar:
+    st.header("Security Tools")
+    st.button("Network Scanner")
+    st.button("Vulnerability Check")
+    st.info("Sentinel-X v1.0 - Powered by Python")
+  
 import streamlit as st
 import socket
 import requests
