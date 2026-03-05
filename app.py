@@ -1,3 +1,23 @@
+{
+  "name": "Sentinel-X Cybersecurity",
+  "short_name": "SentinelX",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e1117",
+  "theme_color": "#00ff41",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2092/2092663.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2092/2092663.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
 import streamlit as st
 import socket
 import requests
