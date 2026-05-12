@@ -10,6 +10,8 @@ st.markdown(
     """
     <head>
         <link rel="manifest" href="./manifest.json">
+        <meta name="author" content="Raj Srivastava (raj113192007)">
+        <meta name="owner" content="Raj Srivastava">
         <script>
             if ('serviceWorker' in navigator) {
               window.addEventListener('load', function() {

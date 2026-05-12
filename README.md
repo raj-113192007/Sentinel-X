@@ -1,24 +1,27 @@
-# 🛡️ Sentinel-X: Advanced Cyber Recon Tool
+# 🛡️ Sentinel-X | Advanced Cyber Recon Suite
 
-Sentinel-X is a powerful, multi-threaded reconnaissance tool built with Python and Streamlit. It helps security researchers scan ports and gather IP information quickly.
+Sentinel-X is a powerful, multi-threaded reconnaissance tool designed for security researchers to scan ports and gather IP intelligence.
 
-## 🚀 Live Demo
-[Check out the Live App](https://satyam-sentinel-x.streamlit.app)
+## 🚀 Part of the KrypZen Ecosystem
+Sentinel-X is a specialized security project within the **KrypZen Ecosystem**, owned by **[Raj Srivastava (raj113192007)](https://github.com/raj113192007)**.
+
+## 👥 Collaborators
+- **Owner**: Raj Srivastava
+- **Co-Developer**: Satyam Raj
 
 ## ✨ Features
-- **Turbo Port Scanner:** Fast multi-threaded scanning.
-- **IP/Domain Recon:** Detailed geo-location and ISP info.
-- **Banner Grabbing:** Identify services running on open ports.
-- **Hacker UI:** Clean, dark-themed dashboard.
-
-## 📁 License
-- **This project is licensed under the MIT License - see the LICENSE file for details.
+- **Turbo Port Scanner**: Fast multi-threaded scanning.
+- **IP/Domain Recon**: Detailed geo-location and ISP info.
+- **Banner Grabbing**: Identify services running on open ports.
+- **Hacker UI**: Clean, dark-themed Streamlit dashboard.
 
 ## 🛠️ Installation
 ```bash
-git clone [https://github.com/sk4702684/Sentinel-X.git](https://github.com/sk4702684/Sentinel-X.git)
+git clone https://github.com/raj113192007/Sentinel-X.git
 cd Sentinel-X
 pip install -r requirements.txt
 streamlit run app.py
+```
 
-
+---
+*Securing the digital frontier. Powered by KrypZen.*
