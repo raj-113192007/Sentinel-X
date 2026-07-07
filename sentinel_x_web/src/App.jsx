@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, Search, Terminal, Globe, Cpu, Radar, ChevronRight, ExternalLink, MapPin, Activity, Wifi, Lock, Box, Zap } from 'lucide-react';
 
@@ -15,7 +15,7 @@ const Navbar = () => (
         <a href="#dashboard" className="hover:text-[#00D1FF] transition-colors">Recon Tool</a>
         <a href="#features" className="hover:text-[#00D1FF] transition-colors">Modules</a>
         <a href="#about" className="hover:text-[#00D1FF] transition-colors">Founder</a>
-        <a href="https://github.com/raj113192007" target="_blank" rel="noopener noreferrer" className="btn-primary">Connect Hub</a>
+        <a href="https://github.com/Krypzen" target="_blank" rel="noopener noreferrer" className="btn-primary">Connect Hub</a>
       </div>
     </div>
   </nav>
@@ -27,7 +27,7 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const [terminalLines, setTerminalLines] = useState([
     { text: 'SENTINEL-X RECON CORE v2.0 READY', type: 'info' },
-    { text: 'OPERATOR: raj113192007', type: 'success' },
+    { text: 'OPERATOR: Krypzen', type: 'success' },
     { text: 'AWAITING NEURAL LINK...', type: 'info' }
   ]);
 
@@ -267,18 +267,18 @@ const App = () => {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#00D1FF] to-[#7000FF] rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
               <div className="relative w-40 h-40 rounded-2xl bg-black border border-white/10 overflow-hidden">
-                <img src="/founder.png" alt="Raj Srivastava" className="w-full h-full object-cover grayscale" />
+                <img src="/founder.png" alt="Krypzen" className="w-full h-full object-cover grayscale" />
               </div>
             </div>
             <div>
               <div className="text-[#00D1FF] font-mono text-[10px] mb-2 font-black tracking-[0.3em]">CHIEF ARCHITECT</div>
-              <h2 className="text-4xl font-black mb-6">Raj Srivastava</h2>
+              <h2 className="text-4xl font-black mb-6">Krypzen</h2>
               <p className="text-lg text-white/40 leading-relaxed mb-8 max-w-2xl">
                 Redefining digital security through the KrypZen Ecosystem. Sentinel-X is our specialized response to the growing need for rapid, autonomous network reconnaissance.
               </p>
               <div className="flex flex-wrap gap-8">
-                <a href="https://github.com/raj113192007" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors flex items-center gap-2 text-sm">
-                  <Terminal size={16} /> raj113192007
+                <a href="https://github.com/Krypzen" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors flex items-center gap-2 text-sm">
+                  <Terminal size={16} /> Krypzen
                 </a>
                 <a href="https://krypzen.com" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors flex items-center gap-2 text-sm">
                   <ExternalLink size={16} /> krypzen.com
